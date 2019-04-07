@@ -19,19 +19,36 @@ public class slide_couleur_fr extends PagerAdapter {
             R.drawable.c1,
             R.drawable.c2,
             R.drawable.c3,
-            R.drawable.c4
+            R.drawable.c4,
+            R.drawable.c5,
+            R.drawable.c6,
+            R.drawable.c7,
+            R.drawable.c8,
+            R.drawable.c9
+
+
     };
     // list of titles
     public String[] lst_title = {
-            "COSMONAUT",
-            "SATELITE",
-            "GALAXY",
-            "ROCKET"
+            "Noir",
+            "VIOLET",
+            "MARON",
+            "ORANGE",
+            "ROSE",
+            "BLUE",
+            "JAUNE",
+            "VERT",
+            "ROUGE"
     }   ;
     // list of descriptions
 
     // list of background colors
     public int[]  lst_backgroundcolor = {
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
             Color.rgb(255,255,255),
             Color.rgb(255,255,255),
             Color.rgb(255,255,255),

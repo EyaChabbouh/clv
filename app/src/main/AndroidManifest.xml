@@ -22,6 +22,18 @@
         <activity android:name=".main_couleur_fr" />
         <activity android:name=".main_legume"/>
         <activity android:name=".main_forme_fr"/>
+        <activity android:name=".anglais"/>
+        <activity android:name=".main_couleur_en"/>
+        <activity android:name=".main_forme_en"/>
+        <activity android:name=".main_fruit_en"/>
+        <activity android:name=".main_legume_en"/>
+        <activity android:name=".main_corp_en"/>
+        <activity android:name=".allemand"/>
+        <activity android:name=".main_corp_al"/>
+        <activity android:name=".main_couleur_al"/>
+        <activity android:name=".main_forme_al"/>
+        <activity android:name=".main_fruit_al"/>
+        <activity android:name=".main_legume_al"/>
     </application>
 
 </manifest>

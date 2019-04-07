@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".francais"
+    tools:context=".anglais"
     android:orientation="vertical"
     android:id="@+id/francais"
     android:background="@drawable/font">
@@ -57,7 +57,7 @@
             android:layout_margin="10dp"
             android:background="#585858"
             android:onClick="openlegume"
-            android:text="legume"
+            android:text="VEGETABLE"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />
@@ -106,7 +106,7 @@
             android:layout_margin="10dp"
             android:background="#585858"
             android:onClick="opencouleur"
-            android:text="couleur"
+            android:text="color"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />
@@ -131,7 +131,7 @@
             android:layout_margin="10dp"
             android:background="#585858"
             android:onClick="openforme"
-            android:text="forme"
+            android:text="form"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />

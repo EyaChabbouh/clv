@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class slide_legume_fr extends  PagerAdapter {
+public class slide_legume_en extends  PagerAdapter {
 
     Context context;
     LayoutInflater inflater;
@@ -30,16 +30,16 @@ public class slide_legume_fr extends  PagerAdapter {
     };
     // list of titles
     public String[] lst_title = {
-             "LATIN",
-            "ÉPINARD",
+             "CAPSICUM",
+            "SPINACH",
             "CHAMPINION",
-            "BETTERAVE",
-            "CHOU",
-            "POMME-DE-TERRE",
-            "CAROTTE",
-            "CHOU-FLEUR",
-            "POIS",
-            "RADIS"
+            "UNIONE",
+            "CABBAGE",
+            "POTATO",
+            "CARROT",
+            "CAULIFLOWER",
+            "PEAS",
+            "TURNIP"
     }   ;
     // list of descriptions
 
@@ -58,7 +58,7 @@ public class slide_legume_fr extends  PagerAdapter {
     };
 
 
-    public slide_legume_fr(Context context) {
+    public slide_legume_en(Context context) {
         this.context = context;
     }
 
@@ -75,7 +75,7 @@ public class slide_legume_fr extends  PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.slide_legume_fr,container,false);
+        View view = inflater.inflate(R.layout.slide_legume_en,container,false);
         LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayoutlegume);
         ImageView imgslide1 = (ImageView)  view.findViewById(R.id.slideimg);
         TextView txttitle1= (TextView) view.findViewById(R.id.txttitle);

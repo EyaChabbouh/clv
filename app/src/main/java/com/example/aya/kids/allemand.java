@@ -1,12 +1,12 @@
 package com.example.aya.kids;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class francais extends AppCompatActivity  {
+public class allemand extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +36,10 @@ public class francais extends AppCompatActivity  {
         corp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             opencorp();
+                opencorp();
             }
         });
-       couleur.setOnClickListener(new View.OnClickListener() {
+        couleur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 opencouleur();
@@ -54,31 +54,31 @@ public class francais extends AppCompatActivity  {
     }
 
     private void openlegume () {
-        Intent intent = new Intent(this, main_legume.class);
+        Intent intent = new Intent(this, main_legume_al.class);
         startActivity(intent);
 
     }
 
     private void openfruit () {
-        Intent intent = new Intent(this, main_fruit_fr.class);
+        Intent intent = new Intent(this, main_fruit_al.class);
         startActivity(intent);
 
 
     }
     private void opencorp () {
-        Intent intent = new Intent(this, main_corp_fr.class);
+        Intent intent = new Intent(this, main_corp_al.class);
         startActivity(intent);
 
 
     }
     private void opencouleur () {
-        Intent intent = new Intent(this, main_couleur_fr.class);
+        Intent intent = new Intent(this, main_couleur_al.class);
         startActivity(intent);
 
 
     }
     private void openforme () {
-        Intent intent = new Intent(this, main_forme_fr.class);
+        Intent intent = new Intent(this, main_forme_al.class);
         startActivity(intent);
 
 
@@ -86,3 +86,4 @@ public class francais extends AppCompatActivity  {
 
 
 }
+

@@ -10,36 +10,40 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class slide_legume_fr extends  PagerAdapter {
+public class slide_forme_en extends  PagerAdapter {
 
     Context context;
     LayoutInflater inflater;
 
     // list of images
     public int[] lst_images = {
-            R.drawable.leg1,
-            R.drawable.leg2,
-            R.drawable.leg3,
-            R.drawable.leg4,
-            R.drawable.leg5,
-            R.drawable.leg7,
-            R.drawable.leg8,
-            R.drawable.leg9,
-            R.drawable.leg10,
-            R.drawable.leg11
+            R.drawable.a1,
+            R.drawable.a2,
+            R.drawable.a3,
+            R.drawable.a4,
+            R.drawable.a5,
+            R.drawable.a6,
+            R.drawable.a7,
+            R.drawable.a8,
+            R.drawable.a9,
+            R.drawable.a10,
+            R.drawable.a11,
+            R.drawable.a12
     };
     // list of titles
     public String[] lst_title = {
-             "LATIN",
-            "ÉPINARD",
-            "CHAMPINION",
-            "BETTERAVE",
-            "CHOU",
-            "POMME-DE-TERRE",
-            "CAROTTE",
-            "CHOU-FLEUR",
-            "POIS",
-            "RADIS"
+            "RECTANGLE",
+            "CIRCLE",
+            "CONE",
+            "DIAMOND",
+            "TRIANGLE",
+            "PARALLELOGRAM",
+            "CUBOID",
+            "CUBE",
+            "CRESCENT",
+            "HEART",
+            "OVAL",
+            "SQUARE"
     }   ;
     // list of descriptions
 
@@ -54,11 +58,13 @@ public class slide_legume_fr extends  PagerAdapter {
             Color.rgb(255,255,255),
             Color.rgb(255,255,255),
             Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
             Color.rgb(255,255,255)
     };
 
 
-    public slide_legume_fr(Context context) {
+    public slide_forme_en(Context context) {
         this.context = context;
     }
 
@@ -75,8 +81,8 @@ public class slide_legume_fr extends  PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.slide_legume_fr,container,false);
-        LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayoutlegume);
+        View view = inflater.inflate(R.layout.slide_forme_en,container,false);
+        LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayoutforme);
         ImageView imgslide1 = (ImageView)  view.findViewById(R.id.slideimg);
         TextView txttitle1= (TextView) view.findViewById(R.id.txttitle);
         // TextView description = (TextView) view.findViewById(R.id.txtdescription);

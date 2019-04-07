@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
-    android:id="@+id/slidelinearlayoutlegume">
+    android:id="@+id/slidelinearlayoutforme">
 
     <ImageView
         android:id="@+id/slideimg"
-        android:layout_width="326dp"
-        android:layout_height="313dp" />
+        android:layout_width="292dp"
+        android:layout_height="367dp" />
 
     <TextView
         android:padding="16dp"
@@ -23,5 +24,6 @@
 
 
 
-
 </LinearLayout>
+
+

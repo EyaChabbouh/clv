@@ -1,17 +1,17 @@
 package com.example.aya.kids;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class francais extends AppCompatActivity  {
+public class anglais extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_francais);
+        setContentView(R.layout.activity_anglais);
         Button fruit = (Button) findViewById(R.id.fruit);
         Button corp = (Button) findViewById(R.id.corp);
         Button legume = (Button) findViewById(R.id.legume);
@@ -36,10 +36,10 @@ public class francais extends AppCompatActivity  {
         corp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             opencorp();
+                opencorp();
             }
         });
-       couleur.setOnClickListener(new View.OnClickListener() {
+        couleur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 opencouleur();
@@ -51,38 +51,38 @@ public class francais extends AppCompatActivity  {
                 openforme();
             }
         });
-    }
-
-    private void openlegume () {
-        Intent intent = new Intent(this, main_legume.class);
-        startActivity(intent);
 
     }
+        private void openlegume () {
+            Intent intent = new Intent(this, main_legume_en.class);
+            startActivity(intent);
 
-    private void openfruit () {
-        Intent intent = new Intent(this, main_fruit_fr.class);
-        startActivity(intent);
+        }
 
-
-    }
-    private void opencorp () {
-        Intent intent = new Intent(this, main_corp_fr.class);
-        startActivity(intent);
-
-
-    }
-    private void opencouleur () {
-        Intent intent = new Intent(this, main_couleur_fr.class);
-        startActivity(intent);
+        private void openfruit () {
+            Intent intent = new Intent(this, main_fruit_en.class);
+            startActivity(intent);
 
 
-    }
-    private void openforme () {
-        Intent intent = new Intent(this, main_forme_fr.class);
-        startActivity(intent);
+        }
+        private void opencorp () {
+            Intent intent = new Intent(this, main_corp_en.class);
+            startActivity(intent);
 
 
-    }
+        }
+        private void opencouleur () {
+            Intent intent = new Intent(this, main_couleur_en.class);
+            startActivity(intent);
+
+        }
+        private void openforme () {
+            Intent intent = new Intent(this, main_forme_en.class);
+            startActivity(intent);
+
+
+        }
 
 
 }
+

@@ -10,36 +10,35 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class slide_legume_fr extends  PagerAdapter {
-
+public class slide_couleur_al extends PagerAdapter {
     Context context;
     LayoutInflater inflater;
 
     // list of images
     public int[] lst_images = {
-            R.drawable.leg1,
-            R.drawable.leg2,
-            R.drawable.leg3,
-            R.drawable.leg4,
-            R.drawable.leg5,
-            R.drawable.leg7,
-            R.drawable.leg8,
-            R.drawable.leg9,
-            R.drawable.leg10,
-            R.drawable.leg11
+            R.drawable.c1,
+            R.drawable.c2,
+            R.drawable.c3,
+            R.drawable.c4,
+            R.drawable.c5,
+            R.drawable.c6,
+            R.drawable.c7,
+            R.drawable.c8,
+            R.drawable.c9
+
+
     };
     // list of titles
     public String[] lst_title = {
-             "LATIN",
-            "ÉPINARD",
-            "CHAMPINION",
-            "BETTERAVE",
-            "CHOU",
-            "POMME-DE-TERRE",
-            "CAROTTE",
-            "CHOU-FLEUR",
-            "POIS",
-            "RADIS"
+            "SCHWARZ",
+            "LILA",
+            "BRAUN",
+            "ORANGE",
+           "EISBAHN",
+          "BLAU",
+            "GELB",
+            "GRÜN",
+            "ROT"
     }   ;
     // list of descriptions
 
@@ -53,12 +52,11 @@ public class slide_legume_fr extends  PagerAdapter {
             Color.rgb(255,255,255),
             Color.rgb(255,255,255),
             Color.rgb(255,255,255),
-            Color.rgb(255,255,255),
             Color.rgb(255,255,255)
     };
 
 
-    public slide_legume_fr(Context context) {
+    public slide_couleur_al(Context context) {
         this.context = context;
     }
 
@@ -75,14 +73,14 @@ public class slide_legume_fr extends  PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.slide_legume_fr,container,false);
-        LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayoutlegume);
-        ImageView imgslide1 = (ImageView)  view.findViewById(R.id.slideimg);
-        TextView txttitle1= (TextView) view.findViewById(R.id.txttitle);
+        View view = inflater.inflate(R.layout.slide_couleur_al,container,false);
+        LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayoutcouleur);
+        ImageView imgslide = (ImageView)  view.findViewById(R.id.slideimg);
+        TextView txttitle= (TextView) view.findViewById(R.id.txttitle);
         // TextView description = (TextView) view.findViewById(R.id.txtdescription);
         layoutslide.setBackgroundColor(lst_backgroundcolor[position]);
-        imgslide1.setImageResource(lst_images[position]);
-        txttitle1.setText(lst_title[position]);
+        imgslide.setImageResource(lst_images[position]);
+        txttitle.setText(lst_title[position]);
         // description.setText(lst_description[position]);
         container.addView(view);
         return view;

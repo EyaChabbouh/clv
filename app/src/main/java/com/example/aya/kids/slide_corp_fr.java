@@ -23,19 +23,44 @@ public class slide_corp_fr  extends  PagerAdapter {
             R.drawable.co1,
             R.drawable.co2,
             R.drawable.co3,
-            R.drawable.co4
+            R.drawable.co4,
+            R.drawable.co5,
+            R.drawable.co6,
+            R.drawable.co7,
+            R.drawable.co8,
+            R.drawable.co9,
+            R.drawable.co10,
+            R.drawable.co11,
+            R.drawable.co12
+
     };
     // list of titles
     public String[] lst_title = {
-            "COSMONAUT",
-            "SATELITE",
-            "GALAXY",
-            "ROCKET"
+            "YEUX",
+            "DOIGTS",
+            "BOUCHE",
+            "DENTS",
+            "COU",
+            "CHEVEUX",
+            "LANGUE",
+            "OREILLE",
+            "POUCE",
+            "ESTOMAC",
+            "COUDE",
+            "SOURCIL"
     }   ;
     // list of descriptions
 
     // list of background colors
     public int[]  lst_backgroundcolor = {
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
+            Color.rgb(255,255,255),
             Color.rgb(255,255,255),
             Color.rgb(255,255,255),
             Color.rgb(255,255,255),
