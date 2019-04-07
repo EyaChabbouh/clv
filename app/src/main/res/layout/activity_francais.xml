@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".francais"
+    android:orientation="vertical"
+    android:id="@+id/francais">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="103dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/clv" />
+
+    <Button
+        android:id="@+id/fruit"
+        android:layout_width="313dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#585858"
+        android:onClick="openfruit"
+        android:text="Fruit"
+        android:textColor="#FF4000"
+        android:textSize="30dp"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/legume"
+        android:layout_width="313dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#585858"
+        android:onClick="openlegume"
+        android:text="legume"
+        android:textColor="#FF4000"
+        android:textSize="30dp"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/corp"
+        android:layout_width="313dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#585858"
+        android:onClick="opencorp"
+        android:text="Corp"
+        android:textColor="#FF4000"
+        android:textSize="30dp"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/couleur"
+        android:layout_width="313dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#585858"
+        android:onClick="opencouleur"
+        android:text="Couleur"
+        android:textColor="#FF4000"
+        android:textSize="30dp"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/form"
+        android:layout_width="313dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#585858"
+        android:onClick="openforme"
+        android:text="forme"
+        android:textColor="#FF4000"
+        android:textSize="30dp"
+        tools:ignore="OnClick" />
+
+
+
+
+</LinearLayout>
