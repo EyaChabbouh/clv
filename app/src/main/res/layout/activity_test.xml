@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aya.kids.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/font"
+    android:id="@+id/mylayout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="152dp"
+        android:layout_margin="40dp"
+        android:src="@drawable/clv" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="303dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="59dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/df" />
+
+            <Button
+                android:id="@+id/francais"
+                android:layout_width="241dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#585858"
+
+                android:onClick="openfruit"
+                android:text="test Francais"
+                android:textColor="#FF4000"
+                android:textSize="30dp"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="78dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/de" />
+
+            <Button
+                android:id="@+id/anglais"
+                android:layout_width="239dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#585858"
+                android:onClick="openlegume"
+                android:text="test anglais"
+                android:textColor="#FF4000"
+                android:textSize="30dp"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/da" />
+
+            <Button
+                android:id="@+id/allemand"
+                android:layout_width="246dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#585858"
+                android:onClick="opencorp"
+                android:text="test allemand"
+                android:textColor="#FF4000"
+                android:textSize="30dp"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

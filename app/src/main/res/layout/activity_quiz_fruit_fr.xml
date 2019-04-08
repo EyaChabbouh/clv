@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".quiz_fruit_fr">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Francais"
+        android:textColor="#894e01"
+        android:layout_gravity="center"
+        android:textSize="50dp"
+        android:layout_margin="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="30sp"
+            android:textColor="#fd040c"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/score_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/question"
+        android:layout_width="337dp"
+        android:layout_height="212dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:text="Which thing is alive?"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/choice1"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#0091EA"
+            android:padding="8dp"
+            android:text="bird"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/choice2"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="24dp"
+            android:background="#6dea00"
+            android:padding="8dp"
+            android:text="door"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/choice3"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="24dp"
+            android:background="#eacf00"
+            android:padding="8dp"
+            android:text="rock"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</LinearLayout>

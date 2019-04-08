@@ -11,9 +11,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class slide_corp_al extends  PagerAdapter {
-
-    Context context;
     LayoutInflater inflater;
+    Context context;
+
 
     // list of images
     public int[] lst_images = {
