@@ -6,26 +6,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".activity_test"
+    tools:context=".DrawerActivity"
     tools:openDrawer="start">
-<LinearLayout
+   <LinearLayout
+       android:layout_marginTop="30dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.example.aya.kids.MainActivity"
     android:orientation="vertical"
     android:background="@drawable/font"
     android:id="@+id/mylayout">
 
     <ImageView
+
         android:layout_width="wrap_content"
         android:layout_height="152dp"
-        android:layout_margin="40dp"
+  android:layout_margin="60dp"
         android:src="@drawable/clv" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="303dp"
         android:layout_gravity="center"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -41,15 +44,15 @@
 
             <Button
                 android:id="@+id/francais"
-                android:layout_width="241dp"
+                android:layout_width="257dp"
                 android:layout_height="61dp"
                 android:layout_gravity="center"
-
+                android:layout_margin="10dp"
                 android:background="#585858"
                 android:onClick="openfruit"
-                android:text="test Francais"
+                android:text="Francais"
                 android:textColor="#FF4000"
-                android:textSize="25dp"
+                android:textSize="30dp"
                 tools:ignore="OnClick" />
         </LinearLayout>
 
@@ -66,14 +69,15 @@
 
             <Button
                 android:id="@+id/anglais"
-                android:layout_width="239dp"
+                android:layout_width="252dp"
                 android:layout_height="61dp"
                 android:layout_gravity="center"
+                android:layout_margin="10dp"
                 android:background="#585858"
                 android:onClick="openlegume"
-                android:text="test anglais"
+                android:text="anglais"
                 android:textColor="#FF4000"
-                android:textSize="25dp"
+                android:textSize="30dp"
                 tools:ignore="OnClick" />
         </LinearLayout>
 
@@ -90,15 +94,15 @@
 
             <Button
                 android:id="@+id/allemand"
-                android:layout_width="243dp"
+                android:layout_width="256dp"
                 android:layout_height="61dp"
                 android:layout_gravity="center"
-
+                android:layout_margin="10dp"
                 android:background="#585858"
                 android:onClick="opencorp"
-                android:text="test allemand"
+                android:text="allemand"
                 android:textColor="#FF4000"
-                android:textSize="25dp"
+                android:textSize="30dp"
                 tools:ignore="OnClick" />
         </LinearLayout>
 
@@ -108,7 +112,7 @@
 </LinearLayout>
 
 
-    <include
+<include
         layout="@layout/app_bar_drawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
