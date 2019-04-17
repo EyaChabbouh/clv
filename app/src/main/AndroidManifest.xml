@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".quiz_al">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,7 +37,10 @@
         <activity android:name=".main_fruit_al" />
         <activity android:name=".main_legume_al" />
         <activity android:name=".activity_test"/>
-    <activity android:name=".quiz_fruit_fr" />
+        <activity android:name=".quiz_fruit_fr" />
+        <activity android:name=".MainActivity"/>
+<activity android:name=".score_fr"/>
+        <activity android:name=".quiz_en"/>
 
     </application>
 

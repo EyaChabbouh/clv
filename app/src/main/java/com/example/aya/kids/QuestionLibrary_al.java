@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 
-class QuestionLibrary  extends PagerAdapter {
+class QuestionLibrary_al extends PagerAdapter {
     LayoutInflater inflater;
     Context context;
     public int[] lst_images = {
@@ -34,33 +34,33 @@ class QuestionLibrary  extends PagerAdapter {
 
 
     private String mChoices [][] = {
-            {"Raisin", "Abricote", "Vert"},
-            {"Betrave", "Yeux", "Pouce"},
-            {"Triangle", "Pomme", "Ananase"},
-            {"Raisin", "Jaune", "Pois"},
-            {"Grenade", "Betrave", "Yeux"},
-            {"Jaune", "Violet", "Noir"},
-            {"Main", "Betrave", "Bouche"},
-            {"Carre", "Rectangle", "Paysage"},
-            {"Banane", "Ananas", "Pomme"},
-            {"ÉPINARD", "Raisin", "Abricote"},
-            {"Bouche", "Cou", "Nez"},
-            {"Bleu", "Violet", "Rose"},
-            {"Rectangle", "Circle", "Cone"},
-            {"Chou-Fleur", "Pomme-Terre", "Pois"},
-            {"Orange", "Datte", "Figue"},
-            {"Cuboid", "Coeur", "Diamont"},
-            {"Jaune", "Bleu", "Noir"}
+            {"Traube", "Aprikose", "Grün"},
+            {"Betreten", "Augen", "Daumen"},
+            {"Triangle", "Apple", "Ananase"},
+             {"Traube", "Gelb", "Erbsen"},
+            {"Granate", "Betrave", "Eyes"},
+            {"Gelb", "Violett", "Schwarz"},
+          {"Main", "Betrave", "Mouth"},
+          {"Quadrat", "Rechteck", "Landschaft"},
+             {"Banane", "Ananas", "Apfel"},
+          {"SPINAT", "Traube", "Aprikose"},
+            {"Mund", "Hals", "Nase"},
+           {"Blau", "Violett", "Rose"},
+           {"Rechteck", "Kreis", "Kegel"},
+            {"Blumenkohl", "Kartoffel-Erde", "Erbsen"},
+         {"Orange", "Datum", "Fig"},
+          {"Cuboid", "Herz", "Diamont"},
+           {"Gelb", "Blau", "Schwarz"}
 
     };
 
 
 
-    private String mCorrectAnswers[] = {"Raisin", "Yeux", "Triangle", "Pois","Grenade","Violet","Bouche","Carre",
-    "Abricote","ÉPINARD","Cou","Rose","Rectangle","Pomme-Terre","Figue","Cuboid","Noir"};
+    private String mCorrectAnswers[] = {"Traube", "Augen", "Triangle", "Erbsen", "Granate", "Violett", "Mouth", "Quadrat",
+"Aprikose", "SPINACH", "Hals", "Rose", "Rechteck", "Apfel-Erde", "Birne", "Cuboid", "Black"};
 
 
-
+public int getLength(){return lst_images.length;}
 
 
     public int getQuestion(int a) {

@@ -15,5 +15,6 @@ public class main_couleur_en extends AppCompatActivity {
         myadapter = new slide_couleur_en (this);
         viewPager.setAdapter(myadapter);
 
+
     }
 }

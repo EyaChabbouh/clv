@@ -2,6 +2,7 @@ package com.example.aya.kids;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,12 @@ import android.widget.TextView;
 public class slide_couleur_en extends PagerAdapter {
     Context context;
     LayoutInflater inflater;
+   // private MediaPlayer media;
+   TextView playBtn;
+    MediaPlayer mp;
+
+
+
 
     // list of images
     public int[] lst_images = {
@@ -40,7 +47,19 @@ public class slide_couleur_en extends PagerAdapter {
             "GREEN",
             "RED"
     }   ;
-    // list of descriptions
+    // list of vocal
+
+    public int[] lst_song = {
+           R.raw.abricote1,
+            R.raw.abricote1,
+            R.raw.abricote1,
+            R.raw.abricote1,
+            R.raw.abricote1,
+            R.raw.abricote1,
+            R.raw.abricote1,
+            R.raw.abricote1,
+            R.raw.abricote1
+    };
 
     // list of background colors
     public int[]  lst_backgroundcolor = {
@@ -77,9 +96,12 @@ public class slide_couleur_en extends PagerAdapter {
         LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayoutcouleur);
         ImageView imgslide = (ImageView)  view.findViewById(R.id.slideimg);
         TextView txttitle= (TextView) view.findViewById(R.id.txttitle);
+        TextView media= (TextView) view.findViewById(R.id.txttitle);
         // TextView description = (TextView) view.findViewById(R.id.txtdescription);
         layoutslide.setBackgroundColor(lst_backgroundcolor[position]);
         imgslide.setImageResource(lst_images[position]);
+       layoutslide.setBackgroundResource(lst_song[position]);
+      layoutslide.playSoundEffect(lst_song[position]);
         txttitle.setText(lst_title[position]);
         // description.setText(lst_description[position]);
         container.addView(view);

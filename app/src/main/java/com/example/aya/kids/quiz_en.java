@@ -2,9 +2,9 @@ package com.example.aya.kids;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -13,10 +13,10 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-public class quiz_fruit_fr extends AppCompatActivity {
+public class quiz_en extends AppCompatActivity {
 
 
-    private QuestionLibrary mQuestionLibrary = new QuestionLibrary();
+    private QuestionLibrary_en mQuestionLibrary = new QuestionLibrary_en();
 
     private TextView mScoreView;
     private ImageView mQuestionView;
@@ -35,7 +35,7 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_fruit_fr);
+        setContentView(R.layout.activity_quiz_en);
 
         r= new Random();
         mScoreView = (TextView)findViewById(R.id.score);
@@ -58,12 +58,12 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
                     mScore = mScore + 1;
                     updateScore(mScore);
                     updateQuestion(r.nextInt(mQustionLength));
-                    Toast.makeText(quiz_fruit_fr.this, "Vrais", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(quiz_en.this, "True", Toast.LENGTH_SHORT).show();
 
                 }else {
 
 
-                    Toast.makeText(quiz_fruit_fr.this, "Faux", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(quiz_en.this, "False", Toast.LENGTH_SHORT).show();
 
                     gameOver();
                 }
@@ -81,11 +81,11 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
                     updateScore(mScore);
                     updateQuestion(r.nextInt(mQustionLength));
 
-                  Toast.makeText(quiz_fruit_fr.this, "Vrais", Toast.LENGTH_SHORT).show();
+                  Toast.makeText(quiz_en.this, "True", Toast.LENGTH_SHORT).show();
 
                 }else {
 
-                    Toast.makeText(quiz_fruit_fr.this, "Faux", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(quiz_en.this, "False", Toast.LENGTH_SHORT).show();
 
                     gameOver();}
             }
@@ -102,10 +102,10 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
                     updateScore(mScore);
                     updateQuestion(r.nextInt(mQustionLength));
 
-            Toast.makeText(quiz_fruit_fr.this, "Vrais", Toast.LENGTH_SHORT).show();
+            Toast.makeText(quiz_en.this, "True", Toast.LENGTH_SHORT).show();
 
                 }else {
-                    Toast.makeText(quiz_fruit_fr.this, "Faux", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(quiz_en.this, "False", Toast.LENGTH_SHORT).show();
 
                     gameOver();
 
@@ -138,18 +138,18 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
     }
 
     private  void  gameOver(){
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(quiz_fruit_fr.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(quiz_en.this);
         alertDialogBuilder
-                .setMessage("Votre score est " + mScore + " point")
+                .setMessage("Your score is " + mScore + " point")
                 .setCancelable(false)
-                .setPositiveButton("Repeter le test", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Repeat the test", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         startActivity(new Intent(getApplicationContext(),activity_test.class));
 
                     }
                 })
-                .setNegativeButton(" Terminer ", new DialogInterface.OnClickListener() {
+                .setNegativeButton(" Continuate ", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 

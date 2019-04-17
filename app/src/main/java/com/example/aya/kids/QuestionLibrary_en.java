@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 
-class QuestionLibrary  extends PagerAdapter {
+class QuestionLibrary_en extends PagerAdapter {
     LayoutInflater inflater;
     Context context;
     public int[] lst_images = {
@@ -33,31 +33,31 @@ class QuestionLibrary  extends PagerAdapter {
     };
 
 
-    private String mChoices [][] = {
-            {"Raisin", "Abricote", "Vert"},
-            {"Betrave", "Yeux", "Pouce"},
-            {"Triangle", "Pomme", "Ananase"},
-            {"Raisin", "Jaune", "Pois"},
-            {"Grenade", "Betrave", "Yeux"},
-            {"Jaune", "Violet", "Noir"},
-            {"Main", "Betrave", "Bouche"},
-            {"Carre", "Rectangle", "Paysage"},
-            {"Banane", "Ananas", "Pomme"},
-            {"ÉPINARD", "Raisin", "Abricote"},
-            {"Bouche", "Cou", "Nez"},
-            {"Bleu", "Violet", "Rose"},
+    private String mChoices_en [][] = {
+            {"Grape", "Apricot", "Green"},
+            {"Betrave", "Eyes", "Thumb"},
+            {"Triangle", "Apple", "Ananase"},
+            {"Grape", "Yellow", "Peas"},
+            {"Grenade", "Betrave", "Eyes"},
+            {"Yellow", "Violet", "Black"},
+            {"Main", "Betrave", "Mouth"},
+            {"Square", "Rectangle", "Landscape"},
+            {"Banana", "Pineapple", "Apple"},
+            {"SPINACH", "Grape", "Apricot"},
+            {"Mouth", "Neck", "Nose"},
+            {"Blue", "Violet", "Rose"},
             {"Rectangle", "Circle", "Cone"},
-            {"Chou-Fleur", "Pomme-Terre", "Pois"},
-            {"Orange", "Datte", "Figue"},
-            {"Cuboid", "Coeur", "Diamont"},
-            {"Jaune", "Bleu", "Noir"}
+            {"Cauliflower", "Potato-Earth", "Peas"},
+            {"Orange", "Date", "Fig"},
+            {"Cuboid", "Heart", "Diamont"},
+             {"Yellow", "Blue", "Black"}
 
     };
 
 
 
-    private String mCorrectAnswers[] = {"Raisin", "Yeux", "Triangle", "Pois","Grenade","Violet","Bouche","Carre",
-    "Abricote","ÉPINARD","Cou","Rose","Rectangle","Pomme-Terre","Figue","Cuboid","Noir"};
+    private String mCorrectAnswers_en[] = {"Grape", "Eyes", "Triangle", "Peas", "Grenade", "Purple", "Mouth", "Square",
+"Apricot", "SPINACH", "Neck", "Rose", "Rectangle", "Apple-Earth", "pear", "Cuboid", "Black"};
 
 
 
@@ -70,24 +70,28 @@ class QuestionLibrary  extends PagerAdapter {
 
 
     public String getChoice1(int a) {
-        String choice0 = mChoices[a][0];
+        String choice0 = mChoices_en[a][0];
         return choice0;
     }
 
 
     public String getChoice2(int a) {
-        String choice1 = mChoices[a][1];
+        String choice1 = mChoices_en[a][1];
         return choice1;
     }
 
     public String getChoice3(int a) {
-        String choice2 = mChoices[a][2];
+        String choice2 = mChoices_en[a][2];
         return choice2;
     }
 
     public String getCorrectAnswer(int a) {
-        String answer = mCorrectAnswers[a];
+        String answer = mCorrectAnswers_en[a];
         return answer;
+    }
+    public String getresultat(int a) {
+        String result = mCorrectAnswers_en[a];
+        return result;
     }
 
     @Override

@@ -46,12 +46,12 @@ public class activity_test extends AppCompatActivity  {
 
         }
     private void openanglais () {
-        Intent intent = new Intent(this, anglais.class);
+        Intent intent = new Intent(this, quiz_en.class);
         startActivity(intent);
 
     }
     private void openallemand () {
-        Intent intent = new Intent(this, allemand.class);
+        Intent intent = new Intent(this, quiz_al.class);
         startActivity(intent);
 
     }

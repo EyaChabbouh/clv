@@ -2,9 +2,9 @@ package com.example.aya.kids;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -13,10 +13,10 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-public class quiz_fruit_fr extends AppCompatActivity {
+public class quiz_al extends AppCompatActivity {
 
 
-    private QuestionLibrary mQuestionLibrary = new QuestionLibrary();
+    private QuestionLibrary_al mQuestionLibrary = new QuestionLibrary_al();
 
     private TextView mScoreView;
     private ImageView mQuestionView;
@@ -35,7 +35,7 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_fruit_fr);
+        setContentView(R.layout.activity_quiz_al);
 
         r= new Random();
         mScoreView = (TextView)findViewById(R.id.score);
@@ -57,13 +57,14 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
                 if (mButtonChoice1.getText() == mAnswer){
                     mScore = mScore + 1;
                     updateScore(mScore);
-                    updateQuestion(r.nextInt(mQustionLength));
-                    Toast.makeText(quiz_fruit_fr.this, "Vrais", Toast.LENGTH_SHORT).show();
+                   updateQuestion(r.nextInt(mQustionLength));
+
+                    Toast.makeText(quiz_al.this, "Real", Toast.LENGTH_SHORT).show();
 
                 }else {
 
 
-                    Toast.makeText(quiz_fruit_fr.this, "Faux", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(quiz_al.this, "Falsch", Toast.LENGTH_SHORT).show();
 
                     gameOver();
                 }
@@ -81,11 +82,11 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
                     updateScore(mScore);
                     updateQuestion(r.nextInt(mQustionLength));
 
-                  Toast.makeText(quiz_fruit_fr.this, "Vrais", Toast.LENGTH_SHORT).show();
+                  Toast.makeText(quiz_al.this, "Real", Toast.LENGTH_SHORT).show();
 
                 }else {
 
-                    Toast.makeText(quiz_fruit_fr.this, "Faux", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(quiz_al.this, "Falsch", Toast.LENGTH_SHORT).show();
 
                     gameOver();}
             }
@@ -102,10 +103,10 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
                     updateScore(mScore);
                     updateQuestion(r.nextInt(mQustionLength));
 
-            Toast.makeText(quiz_fruit_fr.this, "Vrais", Toast.LENGTH_SHORT).show();
+            Toast.makeText(quiz_al.this, "Real", Toast.LENGTH_SHORT).show();
 
                 }else {
-                    Toast.makeText(quiz_fruit_fr.this, "Faux", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(quiz_al.this, "Falsch", Toast.LENGTH_SHORT).show();
 
                     gameOver();
 
@@ -121,14 +122,20 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
     }
 
     private void updateQuestion(int i){
-
+if (mQuestionNumber<mQuestionLibrary.getLength()) {
        mQuestionView.setImageResource(mQuestionLibrary.getQuestion(mQuestionNumber));
         mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
         mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
         mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
-
         mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
         mQuestionNumber++;
+    }
+    else {
+    Toast.makeText(quiz_al.this,"Ist die letzte frage!",Toast.LENGTH_SHORT).show();
+    Intent intent= new Intent(quiz_al.this,score_fr.class);
+    intent.putExtra("Score : ",mScore);
+    startActivity(intent);
+    }
 
     }
 
@@ -138,18 +145,18 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
     }
 
     private  void  gameOver(){
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(quiz_fruit_fr.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(quiz_al.this);
         alertDialogBuilder
-                .setMessage("Votre score est " + mScore + " point")
+                .setMessage(" Ihre Punktzahl ist " + mScore + " Punkt")
                 .setCancelable(false)
-                .setPositiveButton("Repeter le test", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Wiederholen Sie den Test", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         startActivity(new Intent(getApplicationContext(),activity_test.class));
 
                     }
                 })
-                .setNegativeButton(" Terminer ", new DialogInterface.OnClickListener() {
+                .setNegativeButton(" Finish ", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
