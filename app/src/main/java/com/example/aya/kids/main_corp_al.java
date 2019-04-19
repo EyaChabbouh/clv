@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-public class main_corp_al extends AppCompatActivity {
+public class main_corp_al extends AppCompatActivity  {
     private ViewPager viewPager;
     private slide_corp_al myadapter;
     @Override

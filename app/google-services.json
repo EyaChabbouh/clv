@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "404186887550",
+    "firebase_url": "https://clvkids-ff66a.firebaseio.com",
+    "project_id": "clvkids-ff66a",
+    "storage_bucket": "clvkids-ff66a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404186887550:android:fa2b4a3bee685fdd",
+        "android_client_info": {
+          "package_name": "com.example.aya.kids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404186887550-984n90n4575goif7e1ldg3mnsimldicl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9TpKLONVPdobIoksNUkxs4t1Bz4dn7tQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404186887550-984n90n4575goif7e1ldg3mnsimldicl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

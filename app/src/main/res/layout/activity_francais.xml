@@ -17,9 +17,10 @@
 
 
     <ImageView
+      android:layout_marginTop="80dp"
         android:layout_width="wrap_content"
         android:layout_height="107dp"
-        android:layout_margin="20dp"
+
         android:src="@drawable/clv" />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -147,6 +148,7 @@
     </LinearLayout>
 
 </LinearLayout>
+
 
     <include
         layout="@layout/app_bar_drawer"

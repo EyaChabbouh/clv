@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.aya.kids">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/title_activity_drawer"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".DrawerActivity"
-            android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainConnectyActivity" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,31 +17,71 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".francais" />
+        <activity android:name=".francais"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".main_fruit_fr" />
         <activity android:name=".main_corp_fr" />
         <activity android:name=".main_couleur_fr" />
         <activity android:name=".main_legume" />
         <activity android:name=".main_forme_fr" />
-        <activity android:name=".anglais" />
+        <activity android:name=".anglais"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".main_couleur_en" />
         <activity android:name=".main_forme_en" />
         <activity android:name=".main_fruit_en" />
         <activity android:name=".main_legume_en" />
         <activity android:name=".main_corp_en" />
-        <activity android:name=".allemand" />
-        <activity android:name=".main_corp_al" />
-        <activity android:name=".main_couleur_al" />
-        <activity android:name=".main_forme_al" />
-        <activity android:name=".main_fruit_al" />
-        <activity android:name=".main_legume_al" />
-        <activity android:name=".activity_test" />
-        <activity android:name=".quiz_fruit_fr" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".score_fr" />
-        <activity android:name=".quiz_en" />
-    <activity android:name=".quiz_al"/>
-
+        <activity
+            android:name=".allemand"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main_corp_al"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main_couleur_al"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main_forme_al"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main_fruit_al"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main_legume_al"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_test"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".quiz_fruit_fr"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".score_fr"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".quiz_en"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".quiz_al"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DrawerActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".AuthentificationActivity" />
     </application>
 
 </manifest>

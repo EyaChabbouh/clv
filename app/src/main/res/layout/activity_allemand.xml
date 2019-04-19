@@ -12,14 +12,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="20dp"
     android:id="@+id/francais"
     android:background="@drawable/font">
-
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="107dp"
-        android:layout_margin="20dp"
+        android:layout_marginTop="70dp"
         android:src="@drawable/clv" />
     <LinearLayout
         android:layout_width="wrap_content"
