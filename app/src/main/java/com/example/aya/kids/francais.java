@@ -130,9 +130,7 @@ public class francais extends AppCompatActivity implements NavigationView.OnNavi
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }

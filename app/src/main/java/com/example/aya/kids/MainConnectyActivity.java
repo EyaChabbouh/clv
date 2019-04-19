@@ -111,10 +111,10 @@ public class MainConnectyActivity extends AppCompatActivity implements View.OnCl
         email = Email.getText().toString().trim();
         password = Password.getText().toString().trim();
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(MainConnectyActivity.this, "Enter the correct Email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainConnectyActivity.this, "Enter correct Email", Toast.LENGTH_SHORT).show();
             return;
         } else if (TextUtils.isEmpty(password)) {
-            Toast.makeText(MainConnectyActivity.this, "Enter the correct password", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainConnectyActivity.this, "Enter correct password", Toast.LENGTH_SHORT).show();
             return;
         }
         //   dialog.setMessage("Loging in please wait...");
@@ -140,7 +140,7 @@ public class MainConnectyActivity extends AppCompatActivity implements View.OnCl
     }
     private void checkIfEmailVerified(){
         FirebaseUser users=FirebaseAuth.getInstance().getCurrentUser();
-        Toast.makeText(this,"Login Success ! Welcom"+users.getEmail(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Login Success ! "+users.getEmail(),Toast.LENGTH_SHORT).show();
         Email.getText().clear();
 
         Password.getText().clear();
