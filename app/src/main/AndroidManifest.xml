@@ -37,26 +37,11 @@
             android:name=".allemand"
             android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".main_corp_al"
-            android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".main_couleur_al"
-            android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".main_forme_al"
-            android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".main_fruit_al"
-            android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".main_legume_al"
-            android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".main_corp_al" />
+        <activity android:name=".main_couleur_al" />
+        <activity android:name=".main_forme_al" />
+        <activity android:name=".main_fruit_al" />
+        <activity android:name=".main_legume_al" />
         <activity
             android:name=".activity_test"
             android:label="@string/title_activity_drawer"

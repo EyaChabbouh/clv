@@ -120,7 +120,7 @@ public class DrawerActivity extends AppCompatActivity
         if (id == R.id.home) {
             startActivity( new Intent(this,DrawerActivity.class));
         } else if (id == R.id.nav_gallery) {
-            startActivity( new Intent(this,francais.class));
+            startActivity( new Intent(this,DrawerActivity.class));
         } else if (id == R.id.nav_slideshow) {
             startActivity( new Intent(this,activity_test.class));
 

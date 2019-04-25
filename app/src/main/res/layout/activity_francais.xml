@@ -8,54 +8,34 @@
     android:fitsSystemWindows="true"
     tools:context=".francais"
     tools:openDrawer="start">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/francais"
-    android:background="@drawable/font">
-
-
-    <ImageView
-      android:layout_marginTop="80dp"
-        android:layout_width="wrap_content"
-        android:layout_height="107dp"
-
-        android:src="@drawable/clv" />
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/francais"
+        android:background="@drawable/bla">
+
 
         <ImageView
-            android:layout_width="59dp"
-            android:layout_height="55dp"
-            android:layout_margin="10dp"
-            android:src="@drawable/s5" />
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/clv" />
 
         <Button
             android:id="@+id/fruit"
-            android:layout_width="257dp"
-            android:layout_height="61dp"
+            android:layout_width="261dp"
+            android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="#585858"
+            android:background="@drawable/s5"
             android:onClick="openfruit"
+
             android:text="Fruit"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="59dp"
-            android:layout_height="55dp"
-            android:layout_margin="10dp"
-            android:src="@drawable/s4" />
 
         <Button
             android:id="@+id/legume"
@@ -63,73 +43,38 @@
             android:layout_height="61dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="#585858"
+            android:background="@drawable/s4"
             android:onClick="openlegume"
-            android:text="legume"
+            android:text="VEGETABLE"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="59dp"
-            android:layout_height="55dp"
-            android:layout_margin="10dp"
-            android:src="@drawable/s6" />
 
         <Button
             android:id="@+id/corp"
             android:layout_width="257dp"
-            android:layout_height="61dp"
+            android:layout_height="53dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="#585858"
+            android:background="@drawable/s6"
             android:onClick="opencorp"
             android:text="Corp"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="62dp"
-            android:layout_height="55dp"
-            android:layout_margin="10dp"
-            android:src="@drawable/s2" />
 
         <Button
             android:id="@+id/couleur"
             android:layout_width="253dp"
-            android:layout_height="59dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="#585858"
+            android:background="@drawable/s2"
             android:onClick="opencouleur"
-            android:text="couleur"
+            android:text="color"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="361dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:layout_margin="10dp"
-            android:src="@drawable/s1" />
 
         <Button
             android:id="@+id/form"
@@ -137,18 +82,17 @@
             android:layout_height="56dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="#585858"
+            android:background="@drawable/s1"
             android:onClick="openforme"
-            android:text="forme"
+            android:text="form"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />
 
 
+
+
     </LinearLayout>
-
-</LinearLayout>
-
 
     <include
         layout="@layout/app_bar_drawer"
