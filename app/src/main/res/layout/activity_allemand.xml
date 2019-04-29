@@ -25,10 +25,11 @@
         <Button
             android:id="@+id/fruit"
             android:layout_width="261dp"
-            android:layout_height="55dp"
+            android:layout_height="64dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/s5"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="openfruit"
 
             android:text="Fruit"
@@ -38,25 +39,13 @@
 
 
         <Button
-            android:id="@+id/legume"
-            android:layout_width="258dp"
-            android:layout_height="61dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/s4"
-            android:onClick="openlegume"
-            android:text="VEGETABLE"
-            android:textColor="#FF4000"
-            android:textSize="30dp"
-            tools:ignore="OnClick" />
-
-        <Button
             android:id="@+id/corp"
-            android:layout_width="257dp"
-            android:layout_height="53dp"
+            android:layout_width="260dp"
+            android:layout_height="64dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/s6"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="opencorp"
             android:text="Corp"
             android:textColor="#FF4000"
@@ -65,11 +54,12 @@
 
         <Button
             android:id="@+id/couleur"
-            android:layout_width="253dp"
-            android:layout_height="48dp"
+            android:layout_width="263dp"
+            android:layout_height="64dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/s2"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="opencouleur"
             android:text="color"
             android:textColor="#FF4000"
@@ -78,18 +68,31 @@
 
         <Button
             android:id="@+id/form"
-            android:layout_width="249dp"
-            android:layout_height="56dp"
+            android:layout_width="261dp"
+            android:layout_height="61dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/s1"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="openforme"
             android:text="form"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />
 
-
+        <Button
+            android:id="@+id/legume"
+            android:layout_width="258dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
+            android:onClick="openlegume"
+            android:text="VEGETABLE"
+            android:textColor="#FF4000"
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
 
 
     </LinearLayout>
