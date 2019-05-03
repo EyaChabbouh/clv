@@ -21,7 +21,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="107dp"
-            android:layout_margin="20dp"
+            android:layout_marginTop="70dp"
             android:src="@drawable/clv" />
 
     <Button

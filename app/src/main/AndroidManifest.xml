@@ -5,11 +5,13 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/title_activity_main_drawer"
+        android:label="@string/title_activity_drawer"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainConnectyActivity" >
+        <activity android:name=".MainConnectyActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +22,7 @@
         <activity android:name=".francais"
             android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".main_fruit_fr"
-            android:logo="@drawable/paint"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".main_fruit_fr" />
         <activity android:name=".main_corp_fr" />
         <activity android:name=".main_couleur_fr" />
         <activity android:name=".main_legume" />
@@ -34,7 +34,7 @@
         <activity android:name=".main_forme_en" />
         <activity android:name=".main_fruit_en" />
         <activity android:name=".main_legume_en"
-            android:logo="@drawable/paint"
+          android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".main_corp_en" />
         <activity
@@ -46,7 +46,7 @@
         <activity android:name=".main_forme_al" />
         <activity android:name=".main_fruit_al" />
         <activity android:name=".main_legume_al"
-            android:logo="@drawable/paint"
+     android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".activity_test"
@@ -72,7 +72,9 @@
             android:name=".DrawerActivity"
             android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".AuthentificationActivity" />
+        <activity android:name=".AuthentificationActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

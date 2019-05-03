@@ -26,18 +26,18 @@
 
         <EditText
             android:id="@+id/nom"
-            android:layout_width="match_parent"
+            android:layout_width="289dp"
             android:layout_height="46dp"
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:background="@drawable/border"
-            android:hint="    Nom"
+            android:hint="     Nom"
             android:textSize="20dp" />
 
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="match_parent"
+            android:layout_width="291dp"
             android:layout_height="46dp"
             android:layout_gravity="center"
             android:layout_margin="5dp"
@@ -51,8 +51,8 @@
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="310dp"
-            android:layout_height="49dp"
+            android:layout_width="291dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:autofillHints="password"
@@ -64,7 +64,7 @@
 
         <Button
             android:id="@+id/connect"
-            android:layout_width="271dp"
+            android:layout_width="216dp"
             android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
@@ -75,7 +75,7 @@
 
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_width="273dp"
+            android:layout_width="217dp"
             android:layout_height="55dp"
             android:layout_below="@+id/connect"
             android:layout_gravity="center"
