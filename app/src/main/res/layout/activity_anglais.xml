@@ -19,7 +19,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="107dp"
-        android:layout_margin="20dp"
+        android:layout_marginTop="60dp"
         android:src="@drawable/clv" />
 
 
@@ -29,7 +29,6 @@
         android:layout_height="64dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="openfruit"
 
@@ -45,7 +44,6 @@
         android:layout_height="64dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="opencorp"
         android:text="Corp"
@@ -59,7 +57,7 @@
         android:layout_height="64dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
+
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="opencouleur"
         android:text="color"
@@ -73,7 +71,7 @@
         android:layout_height="61dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
+
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="openforme"
         android:text="form"
@@ -87,7 +85,6 @@
         android:layout_height="61dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="openlegume"
         android:text="VEGETABLE"
@@ -100,19 +97,19 @@
 
 
 </LinearLayout>
+    <include
+        layout="@layout/app_bar_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-<include
-layout="@layout/app_bar_drawer"
-android:layout_width="match_parent"
-android:layout_height="match_parent" />
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_drawer"
+        app:menu="@menu/activity_drawer_drawer" />
 
-<android.support.design.widget.NavigationView
-android:id="@+id/nav_view"
-android:layout_width="wrap_content"
-android:layout_height="match_parent"
-android:layout_gravity="start"
-android:fitsSystemWindows="true"
-app:headerLayout="@layout/nav_header_drawer"
-app:menu="@menu/activity_drawer_drawer" />
 
     </android.support.v4.widget.DrawerLayout>

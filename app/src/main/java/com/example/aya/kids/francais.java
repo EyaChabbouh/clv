@@ -147,7 +147,8 @@ public class francais extends AppCompatActivity implements NavigationView.OnNavi
             startActivity( new Intent(this,francais.class));
         } else if (id == R.id.nav_slideshow) {
             startActivity( new Intent(this,activity_test.class));
-
+        } else if (id == R.id.nav_contact) {
+            startActivity( new Intent(this,contact.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

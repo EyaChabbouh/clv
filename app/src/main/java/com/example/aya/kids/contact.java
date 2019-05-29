@@ -11,17 +11,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-public class anglais extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class contact extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_anglais);
+        setContentView(R.layout.contact);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -31,79 +32,8 @@ public class anglais extends AppCompatActivity implements NavigationView.OnNavig
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        Button fruit = (Button) findViewById(R.id.fruit);
-        Button corp = (Button) findViewById(R.id.corp);
-        Button legume = (Button) findViewById(R.id.legume);
-        Button forme = (Button) findViewById(R.id.form);
-        Button couleur = (Button) findViewById(R.id.couleur);
-        legume.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                openlegume();
-            }
-        });
-
-        fruit.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                openfruit();
-
-            }
-        });
-        corp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opencorp();
-            }
-        });
-        couleur.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opencouleur();
-            }
-        });
-        forme.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openforme();
-            }
-        });
-
     }
-        private void openlegume () {
-            Intent intent = new Intent(this, main_legume_en.class);
-            startActivity(intent);
 
-        }
-
-        private void openfruit () {
-            Intent intent = new Intent(this, main_fruit_en.class);
-            startActivity(intent);
-
-
-        }
-        private void opencorp () {
-            Intent intent = new Intent(this, main_corp_en.class);
-            startActivity(intent);
-
-
-        }
-        private void opencouleur () {
-            Intent intent = new Intent(this, main_couleur_en.class);
-            startActivity(intent);
-
-        }
-        private void openforme () {
-            Intent intent = new Intent(this, main_forme_en.class);
-            startActivity(intent);
-
-
-        }
-
-
-    @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
@@ -147,6 +77,7 @@ public class anglais extends AppCompatActivity implements NavigationView.OnNavig
             startActivity( new Intent(this,activity_test.class));
         } else if (id == R.id.nav_contact) {
             startActivity( new Intent(this,contact.class));
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -49,17 +49,7 @@ public class slide_couleur_en extends PagerAdapter {
     }   ;
     // list of vocal
 
-    public int[] lst_song = {
-           R.raw.abricote1,
-            R.raw.abricote1,
-            R.raw.abricote1,
-            R.raw.abricote1,
-            R.raw.abricote1,
-            R.raw.abricote1,
-            R.raw.abricote1,
-            R.raw.abricote1,
-            R.raw.abricote1
-    };
+
 
     // list of background colors
     public int[]  lst_backgroundcolor = {
@@ -100,8 +90,7 @@ public class slide_couleur_en extends PagerAdapter {
         // TextView description = (TextView) view.findViewById(R.id.txtdescription);
         layoutslide.setBackgroundColor(lst_backgroundcolor[position]);
         imgslide.setImageResource(lst_images[position]);
-       layoutslide.setBackgroundResource(lst_song[position]);
-      layoutslide.playSoundEffect(lst_song[position]);
+
         txttitle.setText(lst_title[position]);
         // description.setText(lst_description[position]);
         container.addView(view);

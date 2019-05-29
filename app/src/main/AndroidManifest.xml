@@ -21,6 +21,9 @@
         </activity>
         <activity android:name=".francais"
             android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".contact"
+            android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".main_fruit_fr" />
         <activity android:name=".main_corp_fr" />

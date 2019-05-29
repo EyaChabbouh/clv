@@ -62,17 +62,17 @@ public class AuthentificationActivity extends AppCompatActivity implements View.
 
 
         if (TextUtils.isEmpty(Name)){
-            Toast.makeText(AuthentificationActivity.this, "Enter Name", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AuthentificationActivity.this, "Enter votre nom", Toast.LENGTH_SHORT).show();
             return;
         }else if (TextUtils.isEmpty(Email)) {
-            Toast.makeText(AuthentificationActivity.this, "Enter Email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AuthentificationActivity.this, "Enter votre email", Toast.LENGTH_SHORT).show();
             return;
         }  else if (TextUtils.isEmpty(Password)){
-            Toast.makeText(AuthentificationActivity.this, "Enter Password", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AuthentificationActivity.this, "Enter le mot de passe ", Toast.LENGTH_SHORT).show();
             return;
 
         }else if (Password.length()<6){
-            Toast.makeText(AuthentificationActivity.this,"le Mot de passe contien 6 camatere minimum",Toast.LENGTH_SHORT).show();
+            Toast.makeText(AuthentificationActivity.this,"le mot de passe contien 6 caractère minimum",Toast.LENGTH_SHORT).show();
             return;
         }
         // mDialog.setMessage("Creating User please wait...");
@@ -87,7 +87,7 @@ public class AuthentificationActivity extends AppCompatActivity implements View.
                     // OnAuth(task.getResult().getUser());
                     mAuth.signOut();
                 }else{
-                    Toast.makeText(AuthentificationActivity.this,"Vous ete enregisterer",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AuthentificationActivity.this,"Vous ete enregisterer ! ",Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -99,7 +99,7 @@ public class AuthentificationActivity extends AppCompatActivity implements View.
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(AuthentificationActivity.this,"Check your Email for verification",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AuthentificationActivity.this,"Succée d'enregistrement!",Toast.LENGTH_SHORT).show();
                         FirebaseAuth.getInstance().signOut();
                     }
                 }

@@ -21,7 +21,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="107dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="60dp"
             android:src="@drawable/clv" />
 
     <Button
@@ -30,7 +30,6 @@
         android:layout_height="64dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="openfruit"
 
@@ -46,7 +45,6 @@
         android:layout_height="64dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="opencorp"
         android:text="Corp"
@@ -60,7 +58,6 @@
         android:layout_height="64dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="opencouleur"
         android:text="color"
@@ -74,7 +71,6 @@
         android:layout_height="61dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="openforme"
         android:text="form"
@@ -88,7 +84,6 @@
         android:layout_height="61dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@drawable/border"
         android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
         android:onClick="openlegume"
         android:text="VEGETABLE"

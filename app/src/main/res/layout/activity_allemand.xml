@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
@@ -13,13 +14,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:id="@+id/francais"
-        android:background="@drawable/bla">
+        android:background="@drawable/font">
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="107dp"
-            android:layout_margin="20dp"
+            android:layout_marginTop="55dp"
             android:src="@drawable/clv" />
 
         <Button
@@ -28,10 +29,8 @@
             android:layout_height="64dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/border"
             android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="openfruit"
-
             android:text="Fruit"
             android:textColor="#FF4000"
             android:textSize="30dp"
@@ -44,7 +43,6 @@
             android:layout_height="64dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/border"
             android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="opencorp"
             android:text="Corp"
@@ -58,7 +56,6 @@
             android:layout_height="64dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/border"
             android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="opencouleur"
             android:text="color"
@@ -72,8 +69,6 @@
             android:layout_height="61dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/border"
-            android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="openforme"
             android:text="form"
             android:textColor="#FF4000"
@@ -86,7 +81,6 @@
             android:layout_height="61dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/border"
             android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="openlegume"
             android:text="VEGETABLE"
@@ -96,7 +90,6 @@
 
 
     </LinearLayout>
-
     <include
         layout="@layout/app_bar_drawer"
         android:layout_width="match_parent"
@@ -110,5 +103,6 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_drawer"
         app:menu="@menu/activity_drawer_drawer" />
+
 
 </android.support.v4.widget.DrawerLayout>

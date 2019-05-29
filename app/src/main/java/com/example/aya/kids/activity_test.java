@@ -118,7 +118,8 @@ public class activity_test extends AppCompatActivity  implements NavigationView.
             startActivity( new Intent(this,francais.class));
         } else if (id == R.id.nav_slideshow) {
             startActivity( new Intent(this,activity_test.class));
-
+        } else if (id == R.id.nav_contact) {
+            startActivity( new Intent(this,contact.class));
 
         }
 
