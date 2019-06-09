@@ -35,7 +35,6 @@
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:autofillHints="email"
-
                 android:hint="   Email"
                 android:inputType="textEmailAddress"
                 android:textSize="25dp"

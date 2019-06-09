@@ -58,7 +58,7 @@
             android:layout_margin="10dp"
             android:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
             android:onClick="opencouleur"
-            android:text="color"
+            android:text="Farbe"
             android:textColor="#FF4000"
             android:textSize="30dp"
             tools:ignore="OnClick" />

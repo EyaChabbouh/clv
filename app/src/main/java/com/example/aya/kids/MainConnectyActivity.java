@@ -126,7 +126,7 @@ public class MainConnectyActivity extends AppCompatActivity implements View.OnCl
                 if (!task.isSuccessful()) {
                     //  dialog.dismiss();
 
-                    Toast.makeText(MainConnectyActivity.this, "Email non validé " +" Or mot de passe non validé ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainConnectyActivity.this, "Email non valide " +" ou mot de passe non valide ", Toast.LENGTH_SHORT).show();
 
                 } else {
                     // dialog.dismiss();
@@ -144,7 +144,7 @@ public class MainConnectyActivity extends AppCompatActivity implements View.OnCl
         Email.getText().clear();
 
         Password.getText().clear();
-        Intent intent = new Intent(MainConnectyActivity.this, francais.class);
+        Intent intent = new Intent(MainConnectyActivity.this, DrawerActivity.class);
         intent.putExtra(userEmail,email);
 
         startActivity(intent);

@@ -13,7 +13,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/francais"
-    android:background="@drawable/bla">
+    android:background="@drawable/font">
 
 
     <ImageView

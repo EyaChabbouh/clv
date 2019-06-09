@@ -58,7 +58,7 @@ private int mQustionLength = mQuestionLibrary.lst_images.length ;
                     mScore = mScore + 1;
                     updateScore(mScore);
                     updateQuestion(r.nextInt(mQustionLength));
-                    Toast.makeText(quiz_fruit_fr.this, "Vrais", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(quiz_fruit_fr.this, "Vrai", Toast.LENGTH_SHORT).show();
 
                 }else {
 
